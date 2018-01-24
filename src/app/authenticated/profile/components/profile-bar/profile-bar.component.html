@@ -1,0 +1,23 @@
+<div class="profile-bar">
+  <div class="profile-img-container">
+    <img src="assets/generic-user.png" class="profile-img-lg">
+  </div>
+  <div class="profile-name">
+    {{user.firstName}} {{user.lastName}}
+  </div>
+  <div class="profile-bar-footer">
+    <div class="row profile-bar-footer-row">
+      <div *ngIf="isCurrentUser">
+        <div routerLink="/authenticated/followers" class="col-md-1 col-md-offset-3 col-xs-3 col-xs-offset-5 col-sm-2 col-sm-offset-3 profile-bar-tab">
+          Followers: {{countOfFollowers}}
+        </div>
+        <div routerLink="/authenticated/following" class="col-md-1 col-xs-3 col-sm-2 profile-bar-tab">
+          Following: {{user.following?.length}}
+        </div>
+      </div>
+      <div *ngIf="!isCurrentUser" (click)="followClick()" class="col-md-1 col-md-offset-3 col-xs-3 col-xs-offset-5 col-sm-2 col-sm-offset-3 profile-bar-tab"
+           [innerText]="isFollowing?'Following':'Follow'" [ngClass]="isFollowing?'following-tab':'not-following-tab'">
+      </div>
+    </div>
+  </div>
+</div>

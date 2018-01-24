@@ -1,0 +1,12 @@
+<div class="comment-row">
+  <div class="content-header">
+    <a class="comment-profile-name" [routerLink]="'/authenticated/profile/'+model.userId">
+      {{user.firstName}} {{user.lastName}}
+      <img src="assets/generic-user.png" class="comment-user-img img-responsive">
+    </a>
+    <div class="date-of-post">{{model.date |  date:'dd-MM-yyyy HH:mm'}}</div>
+  </div>
+  <div class="content-text">
+    {{model.content}}
+  </div>
+</div>

@@ -1,0 +1,6 @@
+<div class="home-content">
+  <div class="posts-container">
+    <app-add-new-post></app-add-new-post>
+    <app-twit *ngFor="let twit of twits" [post]="twit"></app-twit>
+  </div>
+</div>

@@ -1,0 +1,122 @@
+.post-box{
+  width: 100%;
+  background-color: #ffffff;
+  min-height: 50px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #e6ecf0;
+  box-sizing: border-box;
+  line-height: 1.375em;
+  padding: 13px 15px 15px;
+  position: relative;
+  padding-bottom: 50px;
+}
+.content{
+  margin-left: 10%;
+}
+.content-header{
+}
+.content-text{
+  margin-top: 10px;
+  font-family: 'Roboto';
+  font-size: 15px;
+}
+.post-profile-name{
+  font-size: larger;
+  font-weight: 500;
+  font-family: 'Roboto';
+  text-decoration: none;
+  color: black;
+}
+.post-profile-name:hover{
+  color: #1da1f2;
+  cursor: pointer;
+  text-decoration: underline;
+}
+.post-user-img{
+  width: 9%;
+  max-width: 40px;
+  position: absolute;
+  left:3%;
+  top: 20px;
+}
+.dropdown-menu-post-btn{
+  border: 0;
+  background: transparent;
+  font-size: 15px;
+}
+.post-dropdown{
+  position: absolute;
+  right: 2%;
+  top: 5px;
+}
+.caret{
+  border-top: 6px dashed;
+  border-top: 6px solid;
+  border-right: 6px solid transparent;
+  border-left: 6px solid transparent;
+}
+.dropdown-menu-post-btn:hover>.caret{
+  border-top: 6px solid #1da1f2;
+}
+.dropdown-menu-post-item{
+  padding-left: 20px;
+}
+.dropdown-menu-post-item:hover{
+  cursor: pointer;
+}
+.date-of-post{
+  opacity: 0.5;
+}
+.post-footer{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 40px;
+  width: 100%;
+  padding-left: calc(12% - 20px);
+}
+.post-icon{
+  line-height: 40px;
+  font-size: 20px;
+  margin-left: 20px;
+}
+.like-icon{
+  color: #a8a4d2;
+}
+.like-icon-active{
+  color: #ff5852;
+}
+.comment-icon{
+  color: #93dbf2;
+}
+.post-icon:hover{
+  cursor: pointer;
+}
+.comments-count{
+  padding-left: 10px;
+}
+.likes-count{
+  padding-left: 6px;
+}
+
+.comments-box{
+  background-color: rgba(255, 255, 255, .8);
+  border-radius: 5px;
+  border: 1px solid #e6ecf0;
+  box-sizing: border-box;
+}
+.comment-item-container{
+  position: relative;
+}
+.remove-comment-icon{
+   position: absolute;
+   top: 10px;
+   right: 10px ;
+   font-size: 15px;
+   color: #657786;
+}
+.remove-comment-icon:hover{
+  cursor: pointer;
+  color: #93dbf2;
+}

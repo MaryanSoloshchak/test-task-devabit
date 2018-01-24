@@ -1,0 +1,9 @@
+<div class="user-item">
+    <a class="user-profile-name" [routerLink]="'/authenticated/profile/'+model.id">
+      {{model.firstName}} {{model.lastName}}
+      <img src="assets/generic-user.png" class="search-user-img img-responsive">
+    </a>
+  <div (click)="followClick()" class="follow-tab"
+       [innerText]="isFollowing?'Following':'Follow'" [ngClass]="isFollowing?'following-tab':'not-following-tab'">
+  </div>
+</div>

@@ -1,0 +1,6 @@
+<div class="search-content">
+  <div class="search-container">
+    <input type="text" class="form-control filter-users-input" placeholder="Type something here" [(ngModel)]="filterInput" (ngModelChange)="filter()">
+    <app-user *ngFor="let user of users" [model]="user"></app-user>
+  </div>
+</div>

@@ -1,0 +1,11 @@
+<div class="sign-in-box">
+  <form [formGroup]="signInForm" (submit)="login()">
+    <div class="form-group">
+      <input type="email" class="form-control" placeholder="Email" formControlName="email" required email>
+    </div>
+    <div class="form-group">
+      <input type="password" class="form-control sign-in-password" formControlName="password" placeholder="Password">
+      <button type="submit" [disabled]="!signInForm.valid" class="btn-submit-sign-in">Log in</button>
+    </div>
+  </form>
+</div>

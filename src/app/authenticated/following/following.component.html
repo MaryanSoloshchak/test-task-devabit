@@ -1,0 +1,6 @@
+<div class="followers-content">
+  <span class="glyphicon glyphicon-menu-left go-back-btn" [routerLink]="'/authenticated/profile/' + currentUserId"></span>
+  <div class="followers-container">
+    <app-user *ngFor="let user of users" [model]="user"></app-user>
+  </div>
+</div>

@@ -1,0 +1,33 @@
+<div class="post-box" *ngIf="post">
+  <div class="content">
+    <div class="content-header">
+      <a class="post-profile-name" [routerLink]="'/authenticated/profile/'+userData.id">
+        {{userData.firstName}} {{userData.lastName}}
+        <img src="assets/generic-user.png" class="post-user-img img-responsive">
+      </a>
+      <div class="date-of-post">{{post.date |  date:'dd-MM-yyyy HH:mm'}}</div>
+      <div class="dropdown post-dropdown" *ngIf="isCurrentUser">
+        <button class="dropdown-menu-post-btn dropdown-toggle" type="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+          <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenu">
+          <li class="dropdown-menu-post-item" (click)="removePost() ">Delete</li>
+        </ul>
+      </div>
+    </div>
+    <div class="content-text">
+      {{post.content}}
+    </div>
+    <div class="post-footer">
+      <span class="glyphicon glyphicon-heart post-icon" [ngClass]="isLike?'like-icon-active':'like-icon'" (click)="likePost()"><span class="likes-count">{{post.likes.length}}</span></span>
+      <span class="glyphicon glyphicon-comment post-icon comment-icon" (click)="changeShowComments()"><span class="comments-count">{{post.comments.length}}</span></span>
+    </div>
+  </div>
+</div>
+<div class="comments-box" *ngIf="showComments">
+  <div *ngFor="let item of post.comments" class="comment-item-container">
+    <app-comment  [model]="item"></app-comment>
+    <span class="glyphicon glyphicon-remove remove-comment-icon" (click)="removeComment(item)" *ngIf="canRemoveComment(item)"></span>
+  </div>
+  <app-add-comment [post]="post"></app-add-comment>
+</div>

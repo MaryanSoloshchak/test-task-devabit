@@ -1,6 +1,18 @@
 <div class="app-header">
-  <a class="home-tab">
-    <img src="/assets/Twitter-icon.png" class="app-icon img-responsive" [routerLink]="'/welcome'">
-      Home
+  <a class="home-tab" routerLink="home">
+    <img src="/assets/Twitter-icon.png" class="app-icon img-responsive">
+    Home
   </a>
+  <a class="profile-tab" [routerLink]="'profile/' + currentUserId">
+    <img src="assets/generic-user.png" class="app-icon img-responsive">
+    Profile
+  </a>
+  <a class="search-tab" [routerLink]="'search'">
+    <span class="glyphicon glyphicon-search app-icon"></span>
+    Search
+  </a>
+  <div class="log-out-tab" (click)="logOutUser()">
+    <span class="app-icon glyphicon glyphicon-off log-out-icon"></span>
+    Log out
+  </div>
 </div>

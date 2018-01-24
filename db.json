@@ -1,0 +1,173 @@
+{
+  "users": [
+    {
+      "id": 0,
+      "firstName": "Marian",
+      "lastName": "Soloshchak",
+      "email": "marian.soloshchak@gmail.com",
+      "password": "Marik199711",
+      "following": [
+        4,
+        5
+      ],
+      "followers": []
+    },
+    {
+      "id": 1,
+      "firstName": "Test",
+      "lastName": "TestTest",
+      "email": "test@gmail.com",
+      "password": "pass",
+      "following": [],
+      "followers": []
+    },
+    {
+      "firstName": "QQQQQQ",
+      "lastName": "wwwwwww",
+      "email": "qwerty@gmail.com",
+      "password": "qwerty",
+      "id": 2
+    },
+    {
+      "firstName": "ewq",
+      "lastName": "qwe",
+      "email": "qwerty@gmail.com",
+      "password": "qwe",
+      "id": 3
+    },
+    {
+      "following": [],
+      "firstName": "qweq",
+      "lastName": "ewqw",
+      "email": "qwerty@gmail.com",
+      "password": "qwerty",
+      "id": 4
+    },
+    {
+      "following": [
+        0
+      ],
+      "firstName": "Some",
+      "lastName": "User",
+      "email": "some@gmail.com",
+      "password": "some",
+      "id": 5
+    },
+    {
+      "following": [],
+      "firstName": "asdasd",
+      "lastName": "asdasd",
+      "email": "asdasd@dads.df",
+      "password": "qwe",
+      "id": 6
+    },
+    {
+      "following": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "firstName": "First Name",
+      "lastName": "Last",
+      "email": "email@email.com",
+      "password": "qwerty",
+      "id": 7
+    }
+  ],
+  "posts": [
+    {
+      "likes": [
+        1,
+        0,
+        5
+      ],
+      "comments": [],
+      "userId": 0,
+      "content": "some test post",
+      "date": "2018-01-23T15:04:40.553Z",
+      "id": 4
+    },
+    {
+      "likes": [
+        1,
+        5
+      ],
+      "comments": [],
+      "userId": 0,
+      "content": "post with many textpost with many textpost with many textpost with many textpost with many textpost with many textpost with many textpost with many textpost with many textpost with many textpost with many textpost with many textpost with many textpost with many textpost with many textpost with many textpost with many textpost with many textpost with many textpost with many textpost with many textpost with many textpost with many textpost with many textpost with many textpost with many textpost with many textpost with many textpost with many textpost with many textpost with many textpost with many textpost with many textpost with many textpost with many textpost with many textpost with many textpost with many text",
+      "date": "2018-01-23T15:05:15.627Z",
+      "id": 5
+    },
+    {
+      "likes": [
+        0
+      ],
+      "comments": [
+        {
+          "date": "2018-01-24T01:30:20.340Z",
+          "content": "sssss",
+          "userId": 0
+        }
+      ],
+      "userId": 1,
+      "content": "my first twit\n",
+      "date": "2018-01-23T20:13:23.186Z",
+      "id": 6
+    },
+    {
+      "likes": [
+        1
+      ],
+      "comments": [
+        {
+          "date": "2018-01-24T00:42:32.251Z",
+          "content": "Some comment from me",
+          "userId": 1
+        }
+      ],
+      "userId": 0,
+      "content": "some twit",
+      "date": "2018-01-23T22:48:51.235Z",
+      "id": 7
+    },
+    {
+      "comments": [],
+      "likes": [],
+      "userId": 3,
+      "content": "fsdfsdfsdf",
+      "date": "2018-01-24T10:15:00.510Z",
+      "id": 8
+    },
+    {
+      "comments": [
+        {
+          "date": "2018-01-24T11:09:45.933Z",
+          "content": "nice",
+          "userId": 0
+        },
+        {
+          "date": "2018-01-24T13:37:39.439Z",
+          "content": "wow",
+          "userId": 7
+        }
+      ],
+      "likes": [],
+      "userId": 5,
+      "content": "MY OWN TWIT",
+      "date": "2018-01-24T10:33:46.136Z",
+      "id": 9
+    },
+    {
+      "comments": [],
+      "likes": [],
+      "userId": 7,
+      "content": "dsfjsdf",
+      "date": "2018-01-24T13:36:39.811Z",
+      "id": 10
+    }
+  ]
+}

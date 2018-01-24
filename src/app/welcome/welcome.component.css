@@ -1,0 +1,48 @@
+.welcome-component-content{
+  position: absolute;
+  width: 100%;
+  height: calc(100% - 46px);
+  top:46px;
+  background-color: #000000;
+  background-image: url("http://abs.twimg.com/b/front_page/v1/EU_6.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.welcome-message{
+  max-width: 40%;
+  margin-left: 10%;
+  margin-top: 5%;
+  display: block;
+  color: #fff;
+}
+.forms-boxes{
+  position: absolute;
+  left: 60%;
+}
+@media only screen
+and (max-width : 850px) {
+  .welcome-message{
+    max-width: 100%;
+    margin: 3%;
+  }
+  .welcome-component-content{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    height: 100%;
+    background-size: 300%;
+  }
+  .forms-boxes{
+    position: absolute;
+    left: 15%;
+    width: 70%;
+    top: 10%;
+  }
+}
+@media only screen
+and (max-width : 950px)
+and (min-width: 851px) {
+  .welcome-component-content{
+    background-size: 120%;
+  }
+}

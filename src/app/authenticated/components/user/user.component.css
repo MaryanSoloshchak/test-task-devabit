@@ -1,0 +1,46 @@
+.user-item{
+  height: 70px;
+  border-bottom: 1px solid rgba(0,0,0,0.25);
+  background-color: #ffffff;
+  position: relative;
+}
+.search-user-img{
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  width: 10%;
+}
+.user-profile-name{
+  line-height: 70px;
+  margin-left: 17%;
+  color: #5c6c86;
+  font-family: 'Roboto';
+  font-size: 20px;
+  font-weight: 500;
+}
+.user-profile-name:hover{
+  color: #1da1f2;
+}
+.follow-tab{
+  line-height: 70px;
+  color: #657786;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 0;
+  letter-spacing: .02em;
+  transition: color .15s ease-in-out;
+  text-align: center;
+  justify-content: center;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 100px;
+}
+.follow-tab:hover{
+  border-bottom: 5px solid #57beff;
+  cursor: pointer;
+}
+.following-tab{
+  border-bottom: 5px solid #57beff;
+}
